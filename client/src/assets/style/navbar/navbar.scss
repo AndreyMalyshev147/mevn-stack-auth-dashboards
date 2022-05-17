@@ -1,0 +1,21 @@
+.navbar {
+  padding: 0 !important;
+
+  &-link {
+    text-decoration: none !important;
+    color: #fff !important;
+  }
+
+  &-user {
+    width: max-content !important;
+  }
+}
+
+@include xs {
+  .navbar {
+
+    &-user {
+      display: none;
+    }
+  }
+}

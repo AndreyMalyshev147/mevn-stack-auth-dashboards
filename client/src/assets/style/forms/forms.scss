@@ -1,0 +1,77 @@
+.form {
+
+  &-box {
+    width: 80% !important;
+  }
+
+  &-btn {
+    color: #fff !important;
+  }
+}
+
+@include xl {
+
+  .form {
+
+    &-input {
+      width: 30%;
+    }
+
+    &-btn {
+      width: 10%;
+    }
+  }
+}
+
+@include lg {
+
+  .form {
+
+    &-input {
+      width: 40%;
+    }
+
+    &-btn {
+      width: 15%;
+    }
+  }
+}
+
+@include md {
+  .form {
+
+    &-input {
+      width: 50%;
+    }
+
+    &-btn {
+      width: 20%;
+    }
+  }
+}
+
+@include sm {
+  .form {
+
+    &-input {
+      width: 70%;
+    }
+
+    &-btn {
+      width: 25%;
+    }
+  }
+}
+
+@include xs {
+  .form {
+
+    &-input {
+      width: 100%;
+    }
+
+    &-btn {
+      width: 50%;
+    }
+  }
+}

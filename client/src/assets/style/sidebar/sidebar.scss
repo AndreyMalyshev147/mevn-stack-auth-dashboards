@@ -1,0 +1,27 @@
+.sidebar {
+
+  &-box {
+    height: 100vh !important;
+    overflow: auto !important;
+
+    & .v-navigation-drawer__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100% !important;
+    }
+  }
+
+  &-btn {
+    width: 80%;
+  }
+
+  &-list {
+    width: 100% !important;
+  }
+
+  &-listitem {
+    width: 90% !important;
+  }
+
+}

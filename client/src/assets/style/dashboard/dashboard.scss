@@ -1,0 +1,86 @@
+.dashboard {
+
+  &-box {
+    max-width: unset !important;
+  }
+
+  &-list {
+    display: grid;
+  }
+
+  &-card {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    color: #fff !important;
+  }
+
+  &-add {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    min-width: unset !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+  }
+
+  &-empty-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@include xl {
+  .dashboard {
+
+    &-list {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+  }
+}
+
+@include lg {
+  .dashboard {
+
+    &-list {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+  }
+}
+
+@include md {
+  .dashboard {
+
+    &-list {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+  }
+}
+
+@include sm {
+  .dashboard {
+
+    &-list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+  }
+}
+
+@include xs {
+  .dashboard {
+
+    &-list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+}
